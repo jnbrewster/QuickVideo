@@ -32,7 +32,6 @@ public class MainActivity extends ActionBarActivity {
         });
     }
 
-
     public void instantCamera() {
         Intent takeVideoIntent = new Intent(MediaStore.ACTION_VIDEO_CAPTURE);
         startActivityForResult(takeVideoIntent, ACTION_TAKE_VIDEO);
@@ -52,7 +51,6 @@ public class MainActivity extends ActionBarActivity {
 
                 //TODO: test if video always saves in DCIM/Camera directory on different builds.
                 Toast.makeText(getApplicationContext(), "The video has been saved to your default camera directory.", Toast.LENGTH_LONG).show();
-
 
             }
         }
